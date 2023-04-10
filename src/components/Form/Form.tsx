@@ -36,8 +36,8 @@ return (
         <Title>Welcome to App</Title>
         <SubTitle>Let’s go calculate your tips</SubTitle>
         <InputContainer>
-            <Input type='number' {...bill} $placeholder="Enter bill" />
-            <Input type='number' {...persons} $placeholder="Enter persons" />
+            <Input type='number' {...bill} placeholder="Enter bill" />
+            <Input type='number' {...persons} placeholder="Enter persons" />
             <CustomSelect $options = {$options} $defaultValue = {$options[0]} handleTipsSelect={handleTipsSelect}/>
         </InputContainer>
         <Total>Total: {total}$</Total>

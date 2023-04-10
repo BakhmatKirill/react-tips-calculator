@@ -3,15 +3,15 @@ import { StyledInput } from './styles'
 
 interface InputProps {
     value: string;
-    $placeholder: string;
+    placeholder: string;
     type: string;
     onChange: (event: ChangeEvent<HTMLInputElement>) => void;
 }
 
-export const Input = ({ $placeholder, value, type, onChange }: InputProps) => {
+export const Input = ({ placeholder, value, type, onChange }: InputProps) => {
     return (
     <StyledInput
-        placeholder={$placeholder}
+        placeholder={placeholder}
         value={value}
         type={type}
         onChange={onChange}
